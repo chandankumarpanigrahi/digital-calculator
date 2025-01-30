@@ -1,0 +1,48 @@
+@media screen and (min-width:768px) {
+    .left_card {
+        padding-left: 0;
+    }
+
+    .right_card {
+        padding-right: 0;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .left_card {
+        padding: 0;
+    }
+
+    .right_card {
+        padding: 0;
+    }
+
+    .two_sections {
+        height: fit-content;
+    }
+}
+
+@media screen and (max-width:576px) {
+    .two_sections {
+        flex-direction: column;
+    }
+
+    .two_sections .calculator {
+        width: 100%;
+        padding-right: 0;
+        border-right: none !important;
+    }
+
+    .two_sections .result {
+        width: 100%
+    }
+
+    .result h4 {
+        font-size: 2rem;
+        font-weight: 900;
+        width: 100%;
+        margin: 2rem !important;
+        padding-left: 0;
+        color: #da8700;
+    }
+}

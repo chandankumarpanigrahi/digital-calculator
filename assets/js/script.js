@@ -6,6 +6,20 @@ function calculateEMI() {
     document.getElementById('emiResult').innerText = `Your Monthly EMI is: ₹${emi.toFixed(2)}`;
 }
 
+function resetEMI(){
+    document.getElementById('loanAmount').value = '';
+    document.getElementById('downPayment').value = '';
+    document.getElementById('interestRate').value = '';
+    document.getElementById('loanTenure').value = '';
+    document.getElementById('emiResult').innerText = '';
+    document.getElementById('ageResult').innerText = '';
+    document.getElementById('weight').value = '';
+    document.getElementById('height').value = '';
+    document.getElementById('ftInput').style.display = 'flex';
+    document.getElementById('cmInput').style.display = 'none';
+    document.getElementById('cmOption').checked = true;
+}
+
 function calculateAge() {
     let dob = document.getElementById('dob').value;
     let toDate = document.getElementById('toDate').value;
@@ -28,6 +42,17 @@ function calculateAge() {
         ageMonths += 12;
     }
     document.getElementById('ageResult').innerText = `Your Age is: ${ageYears} Years, ${ageMonths} Months, ${ageDays} Days`;
+}
+
+function resetAge(){
+    document.getElementById('dob').value = '';
+    document.getElementById('toDate').value = '';
+    document.getElementById('ageResult').innerText = '';
+    document.getElementById('weight').value = '';
+    document.getElementById('height').value = '';
+    document.getElementById('ftInput').style.display = 'flex';
+    document.getElementById('cmInput').style.display = 'none';
+    document.getElementById('cmOption').checked = true;
 }
 
 function toggleHeightInput() {
@@ -69,12 +94,49 @@ function calculateBMI() {
     document.getElementById('bmiResult').innerText = `Your BMI: ${bmi.toFixed(2)} (${category})`;
 }
 
+function resetBMI(){
+    document.getElementById('weight').value = '';
+    document.getElementById('heightFeet').value = '';
+    document.getElementById('heightInches').value = '';
+    document.getElementById('heightCm').value = '';
+    document.getElementById('cmOption').checked = true;
+    document.getElementById('bmiResult').innerText = '';
+    document.getElementById('ftInput').style.display = 'flex';
+    document.getElementById('cmInput').style.display = 'none';
+}
+
 function calculateFuelCost() {
     let cost = (document.getElementById('distance').value / document.getElementById('mileage').value) * document.getElementById('fuelPrice').value;
     document.getElementById('fuelResult').innerText = `Your Fuel Cost: ₹${cost.toFixed(2)}`;
 }
 
+function resetFuelCost(){
+    document.getElementById('distance').value = '';
+    document.getElementById('mileage').value = '';
+    document.getElementById('fuelPrice').value = '';
+    document.getElementById('fuelResult').innerText = '';
+    document.getElementById('ageResult').innerText = '';
+    document.getElementById('weight').value = '';
+    document.getElementById('height').value = '';
+    document.getElementById('ftInput').style.display = 'flex';
+    document.getElementById('cmInput').style.display = 'none';
+    document.getElementById('cmOption').checked = true;
+}
+
 function calculateEVCharge() {
     let cost = (document.getElementById('batteryCapacity').value * (document.getElementById('chargeUsed').value / 100)) * document.getElementById('electricityCost').value;
     document.getElementById('evResult').innerText = `Your EV Charging Cost: ₹${cost.toFixed(2)}`;
+}
+
+function resetEV(){
+    document.getElementById('batteryCapacity').value = '';
+    document.getElementById('chargeUsed').value = '';
+    document.getElementById('electricityCost').value = '';
+    document.getElementById('evResult').innerText = '';
+    document.getElementById('ageResult').innerText = '';
+    document.getElementById('weight').value = '';
+    document.getElementById('height').value = '';
+    document.getElementById('ftInput').style.display = 'flex';
+    document.getElementById('cmInput').style.display = 'none';
+    document.getElementById('cmOption').checked = true;
 }
