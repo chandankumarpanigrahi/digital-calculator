@@ -272,8 +272,12 @@ footer p{
     font-weight: 900;
     width: 80%;
     margin: auto;
-    padding-left: 2rem;
+    padding-bottom: 1rem;
     color: #da8700;
+}
+
+.result p{
+    margin-bottom: 0.25rem;
 }
 
 .btn_calculate{

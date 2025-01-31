@@ -208,6 +208,7 @@ function calculateSIP() {
     document.getElementById('resultTitle').innerText = "SIP Investment Results";
     document.getElementById('totalInvestment').innerText = `Total Investment: ₹${totalInvestment.toFixed(2)}`;
     document.getElementById('totalReturns').innerText = `Estimated Returns: ₹${returns.toFixed(2)}`;
+    document.getElementById('fullReturns').innerText = `And Total Returns: ₹${futureValue.toFixed(2)}`;
 }
 
 function resetSIP() {
@@ -230,6 +231,7 @@ function calculateLumpsum() {
     document.getElementById('resultTitle').innerText = "Lumpsum Investment Results";
     document.getElementById('totalInvestment').innerText = `Initial Investment: ₹${p.toFixed(2)}`;
     document.getElementById('totalReturns').innerText = `Estimated Returns: ₹${returns.toFixed(2)}`;
+    document.getElementById('fullReturns').innerText = `Total Returns: ₹${futureValue.toFixed(2)}`;
 }
 
 function resetLumpsum() {
