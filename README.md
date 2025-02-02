@@ -1,4 +1,4 @@
-# 🧮 Online Calculator Suite  
+# 🧮 Digital Calculator  
 
 A **comprehensive web-based calculator** tool designed to simplify financial and mathematical calculations. This lightweight and user-friendly app provides multiple calculators in one place for quick and accurate results.  
 
@@ -20,7 +20,8 @@ A **comprehensive web-based calculator** tool designed to simplify financial and
 9. **EV Charge Calculator** - Plan your electric vehicle charging time and cost for a hassle-free experience.  
 
 ## 📷 Preview  
-![Online Calculators Screenshot](screenshot.png)  
+![image](https://github.com/user-attachments/assets/784102c6-615b-490c-8a8d-0a2c3c007d0f)
+
 
 ## 🔧 Technologies Used  
 - **HTML, CSS, JavaScript** – For core functionality and interactivity.  
