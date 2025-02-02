@@ -267,3 +267,39 @@ function resetDiscount() {
     document.getElementById('amountSaved').innerText = '';
     document.getElementById('finalPrice').innerText = '';
 }
+
+function toggleInputFields() {
+    let conversionType = document.getElementById("conversionType").value;
+    if (conversionType === "cgpaToPercentage") {
+        document.getElementById("cgpaSection").style.display = "block";
+        document.getElementById("percentageSection").style.display = "none";
+    } else {
+        document.getElementById("cgpaSection").style.display = "none";
+        document.getElementById("percentageSection").style.display = "block";
+    }
+}
+
+function calculateMarks() {
+    let conversionType = document.getElementById("conversionType").value;
+    let result = "";
+
+    if (conversionType === "cgpaToPercentage") {
+        let cgpa = parseFloat(document.getElementById("cgpaInput").value);
+        if (!isNaN(cgpa)) {
+            result = `Percentage: ${(cgpa * 9.5).toFixed(2)}%`;
+        }
+    } else {
+        let percentage = parseFloat(document.getElementById("percentageInput").value);
+        if (!isNaN(percentage)) {
+            result = `CGPA/SGPA: ${(percentage / 9.5).toFixed(2)}`;
+        }
+    }
+
+    document.getElementById("markResult").innerHTML = result || "Please enter a valid number!";
+}
+
+function resetMarks() {
+    document.getElementById("cgpaInput").value = "";
+    document.getElementById("percentageInput").value = "";
+    document.getElementById("markResult").innerHTML = "";
+}

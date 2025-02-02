@@ -62,64 +62,72 @@
         </nav>
     </header>
     
-<section class="container calculator_card my-3">
-    <div class="row">
-        <div class="col-md-12">
-            <div class="hero_area">
-                <h1>EV Charge Calculator</h1>
-                <h6>Plan your electric vehicle charging time and cost for a hassle-free experience.</h6>
-            </div>
-        </div>
-    </div>
-</section>
-<section class="container mt-3">
-    <div class="row">
-        <div class="col-md-4 left_card mb-3">
-            <div class="container calculator_card pe-1">
-                <div class="description pe-2">
-                    <h6>Purpose:</h6>
-                    <p>This calculator helps electric vehicle (EV) owners determine the cost of charging their vehicle based on battery capacity and electricity rates.</p>
-                    
-                    <h6>Process:</h6>
-                    <ol>
-                        <li>Enter the battery capacity in kWh.</li>
-                        <li>Enter the charge used (%) from the battery.</li>
-                        <li>Provide the electricity cost per kWh.</li>
-                        <li>Click "Calculate Cost" to get the estimated charging expense.</li>
-                    </ol>
-
-                    <h6>Required Fields:</h6>
-                    <ul>
-                        <li>Battery Capacity (kWh)</li>
-                        <li>Charge Used (%)</li>
-                        <li>Electricity Cost (₹/kWh)</li>
-                    </ul>
+    <section class="container calculator_card my-3">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="hero_area">
+                    <h1>Mark Calculator</h1>
+                    <h6>Convert CGPA/SGPA to Percentage and vice versa easily.</h6>
                 </div>
             </div>
         </div>
-        <div class="col-md-8 right_card mb-3">
-            <div class="container calculator_card">
-                <div class="two_sections">
-                    <div class="calculator">
-                        <label>Battery Capacity (kWh):</label>
-                        <input type="number" id="batteryCapacity" class="form-control mb-2">
-                        <label>Charge Used (%):</label>
-                        <input type="number" id="chargeUsed" class="form-control mb-2">
-                        <label>Electricity Cost (₹/kWh):</label>
-                        <input type="number" id="electricityCost" class="form-control mb-2">
-                        <div class="d-flex">
-                            <button class="btn btn_calculate w-100 me-1" onclick="calculateEVCharge()">Calculate Cost</button>
-                            <button class="btn btn_reset w-50 ms-1" onclick="resetEV()">Reset</button>
+    </section>
+    <section class="container mt-3">
+        <div class="row">
+            <div class="col-md-4 left_card mb-3">
+                <div class="container calculator_card pe-1">
+                    <div class="description pe-2">
+                        <h6>Purpose:</h6>
+                        <p>This calculator helps students convert their CGPA/SGPA to Percentage and vice versa based on standard formulas.</p>
+                        
+                        <h6>Process:</h6>
+                        <ol>
+                            <li>Select conversion type: CGPA/SGPA → Percentage or Percentage → CGPA/SGPA.</li>
+                            <li>Enter your CGPA/SGPA or Percentage.</li>
+                            <li>Click "Calculate" to get the result.</li>
+                        </ol>
+    
+                        <h6>Required Fields:</h6>
+                        <ul>
+                            <li>CGPA/SGPA (if converting to Percentage)</li>
+                            <li>Percentage (if converting to CGPA/SGPA)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-8 right_card mb-3">
+                <div class="container calculator_card">
+                    <div class="two_sections">
+                        <div class="calculator">
+                            <label>Select Conversion Type:</label>
+                            <select id="conversionType" class="form-control mb-2" onchange="toggleInputFields()">
+                                <option value="cgpaToPercentage">CGPA/SGPA to Percentage</option>
+                                <option value="percentageToCgpa">Percentage to CGPA/SGPA</option>
+                            </select>
+    
+                            <div id="cgpaSection">
+                                <label>Enter CGPA/SGPA:</label>
+                                <input type="number" id="cgpaInput" class="form-control mb-2" step="0.01">
+                            </div>
+    
+                            <div id="percentageSection" style="display: none;">
+                                <label>Enter Percentage:</label>
+                                <input type="number" id="percentageInput" class="form-control mb-2" step="0.01">
+                            </div>
+    
+                            <div class="d-flex">
+                                <button class="btn btn_calculate w-100 me-1" onclick="calculateMarks()">Calculate</button>
+                                <button class="btn btn_reset w-50 ms-1" onclick="resetMarks()">Reset</button>
+                            </div>
+                        </div>
+                        <div class="result">
+                            <h4 class="text-center mt-3" id="markResult"></h4>
                         </div>
                     </div>
-                    <div class="result">
-                        <h4 class="text-center mt-3" id="evResult"></h4>
-                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 <footer class="container mb-3">
     <div class="d-flex w-100">
         <p>Digital Guru Productions</p>

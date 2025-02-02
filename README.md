@@ -18,6 +18,9 @@ A **comprehensive web-based calculator** tool designed to simplify financial and
 7. **BMI Calculator** - Determine Body Mass Index and health status.  
 8. **Fuel  Calculator** - Estimate the total fuel cost for your journey based on distance and fuel efficiency.
 9. **EV Charge Calculator** - Plan your electric vehicle charging time and cost for a hassle-free experience.  
+10. **Mark Calculator** - Convert CGPA/SGPA to Percentage and vice versa easily with accurate answer.
+
+  
 
 ## 📷 Preview  
 ![image](https://github.com/user-attachments/assets/784102c6-615b-490c-8a8d-0a2c3c007d0f)
