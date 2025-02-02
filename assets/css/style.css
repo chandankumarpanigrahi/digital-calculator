@@ -324,6 +324,33 @@ footer p {
     height: 400px;
 }
 
-.iframe_form .form .col-md-8{
-    
+.user_chandan{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border: 3px solid #ffb100;
+    border-radius: 0.5rem;
+    transition: all 0.2s ease-in-out;
+}
+
+.user_chandan:hover{
+    transform: scale(1.1);
+    transition: all 0.2s ease-in-out;
+}
+
+.social_media{
+    display: flex;
+    gap: 0.5rem;
+}
+
+.social_media a{
+    text-decoration: none;
+    color: #571bb7;
+}
+
+.social_media a:hover{
+    color: #ffb100;
+}
+.social_media a i::before{
+    font-size: 1.5rem;
 }
