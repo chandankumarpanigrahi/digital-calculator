@@ -62,24 +62,64 @@
         </nav>
     </header>
     
-<section class="container calculator_card my-3">
-    <div class="row">
-        <div class="col-md-12">
-            <div class="hero_area">
-                <h1>Contact Us</h1>
-                <h6>This Page is Under Construction</h6>
+    <section class="container calculator_card my-3">
+        <div class="hero_area text-center">
+            <h1>Contact Us</h1>
+            <h6>Get in touch with us for any queries or support.</h6>
+        </div>
+    </section>
+    
+    <section class="container mt-3">
+        <div class="row">
+            <div class="col-md-6 left_card mb-3">
+                <div class="container calculator_card">
+                    <h3 class="mb-3">Contact Information</h3>
+                    <p class="mb-2"><strong>Email:</strong> digitalguruproductions@gmail.com</p>
+                    <p class="mb-2"><strong>Address:</strong> Bhubaneswar, India</p>
+                    <p class="mb-2">We are available Monday to Friday, 7PM - 9 PM.</p>
+                </div>
+            </div>
+            <div class="col-md-6 right_card mb-3">
+                <div class="container calculator_card">
+                    <h5>Send Us a Message</h5>
+                    <form id="contactForm" action="https://formsubmit.co/el/himice" method="POST">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Your Name</label>
+                            <input type="text" class="form-control" id="name"  name="Name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Your Email</label>
+                            <input type="email" class="form-control" id="email" name="Email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Your Message</label>
+                            <textarea class="form-control" id="message" rows="4" name="Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn_calculate w-100">Send Message</button>
+                    </form>
+                    <p class="text-success mt-2" id="successMessage" style="display:none;">Message sent successfully!</p>
+                </div>
             </div>
         </div>
-    </div>
-</section>
-<footer class="container mb-3">
-    <div class="d-flex w-100">
-        <p>Digital Guru Productions</p>
-        <p>|</p>
-        <a href="http://mrchamp.netlify.app" target="_blank" rel="noopener noreferrer">Chandan Kumar Panigrahi</a>
-        <p class="ms-auto">All Rights Reserved @2025 by Digital Calendar</p>
-    </div>
-</footer>
+    </section>
+    
+    <footer class="container mb-3">
+        <div class="d-flex w-100">
+            <p>Digital Guru Productions</p>
+            <p>|</p>
+            <a href="http://mrchamp.netlify.app" target="_blank" rel="noopener noreferrer">Chandan Kumar Panigrahi</a>
+            <p class="ms-auto">All Rights Reserved @2025 by Digital Calculator</p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById("contactForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+            document.getElementById("successMessage").style.display = "block";
+            setTimeout(() => document.getElementById("successMessage").style.display = "none", 3000);
+            document.getElementById("contactForm").reset();
+        });
+    </script>
 
 <script src="./assets/js/script.js"></script>
 <!-- <script src="./assets/plugins/bootstrap/dist/js/bootstrap.min.js"></script> -->

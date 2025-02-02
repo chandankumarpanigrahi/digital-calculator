@@ -1,3 +1,15 @@
+document.addEventListener("DOMContentLoaded", function () {
+    document.addEventListener("contextmenu", function (e) {
+        e.preventDefault();
+    });
+});
+
+document.addEventListener("keydown", function (e) {
+    if (e.ctrlKey) {
+        e.preventDefault();
+    }
+});
+
 function calculateEMI() {
     let loanAmount = document.getElementById('loanAmount').value - document.getElementById('downPayment').value;
     let hiddenCharges = document.getElementById('hiddenCharges').value || 0; // Default to 0 if empty
@@ -303,3 +315,4 @@ function resetMarks() {
     document.getElementById("percentageInput").value = "";
     document.getElementById("markResult").innerHTML = "";
 }
+
