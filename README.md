@@ -9,19 +9,15 @@ A **comprehensive web-based calculator** tool designed to simplify financial and
 - **Supports multiple use cases** like loans, investments, and discounts.  
 
 ## 📊 Available Calculators  
-1. **EMI Calculator** – Calculate monthly loan repayments.  
-2. **GST Calculator** – Compute GST for inclusive/exclusive amounts.  
-3. **SIP Calculator** – Estimate returns on mutual fund SIP investments.  
-4. **Lumpsum Calculator** – Predict growth for one-time investments.  
-<!-- 5. **FD Calculator** – Compute maturity value for fixed deposits.   -->
-<!-- 6. **RD Calculator** – Calculate returns on recurring deposits.   -->
-7. **Discount Calculator** – Find the final price after applying discounts.  
-<!-- 8. **Income Tax Calculator** – Estimate annual tax based on income.   -->
-9. **Age Calculator** – Calculate exact age in years, months, and days.  
-10. **BMI Calculator** – Determine Body Mass Index and health status.  
-<!-- 11. **Percentage Calculator** – Solve percentage-based calculations.   -->
-<!-- 12. **Simple Interest Calculator** – Calculate interest on a principal amount.   -->
-<!-- 13. **Compound Interest Calculator** – Compute compound interest over time.   -->
+1. **EMI Calculator** - Calculate monthly loan repayments.  
+2. **GST Calculator** - Compute GST for inclusive/exclusive amounts.  
+3. **SIP Calculator** - Estimate returns on mutual fund SIP investments.  
+4. **Lumpsum Calculator** - Predict growth for one-time investments.  
+5. **Discount Calculator** - Find the final price after applying discounts.  
+6. **Age Calculator** - Calculate exact age in years, months, and days.  
+7. **BMI Calculator** - Determine Body Mass Index and health status.  
+8. **Fuel  Calculator** - Estimate the total fuel cost for your journey based on distance and fuel efficiency.
+9. **EV Charge Calculator** - Plan your electric vehicle charging time and cost for a hassle-free experience.  
 
 ## 📷 Preview  
 ![Online Calculators Screenshot](screenshot.png)  
