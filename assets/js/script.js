@@ -10,6 +10,19 @@ document.addEventListener("keydown", function (e) {
     }
 });
 
+// ============= AJAX =============================
+$.ajax({
+    url: "https://formsubmit.co/ajax/digitalguruproductions@gmail.com",
+    method: "POST",
+    data: {
+        name: "FormSubmit",
+        message: "I'm from Devro LABS"
+    },
+    dataType: "json"
+});
+// ==================================================
+
+
 function calculateEMI() {
     let loanAmount = document.getElementById('loanAmount').value - document.getElementById('downPayment').value;
     let hiddenCharges = document.getElementById('hiddenCharges').value || 0; // Default to 0 if empty
